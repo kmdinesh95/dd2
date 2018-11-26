@@ -1,0 +1,15 @@
+Install
+ "ng2-tooltip-directive": "^2.1.5",
+ "ngx-tooltip": "0.0.9",
+ 
+<-----------------HTML-------------->
+<div class="icon-info" tooltip="{{tooltipMessgae.TRAVEL_MOB_NUMBER}}"[tooltip]="myTooltipRegYear" [tooltipAnimation]="true" tooltipPlacement=""><img src="./assets/images/icon-info.jpg" /></div>
+
+<-----------Image ToolTip------------>
+
+ <div class="icon-info" style="margin-right:0px;" [tooltip]="myTooltipChasis" tooltipPlacement="{{tootipMessage.getPlacementAlignment()}}"><img src="./assets/images/icon-info.jpg" alt="icon-info" /></div>
+                      <tooltip-content #myTooltipChasis [animation]="true" class="image-tooltip" >
+                        <div class="divider-10"></div>
+                        <img src="./assets/images/chasis-number.png" alt="chasis-number" />
+                        <div class="divider-10"></div>
+                      </tooltip-content>
