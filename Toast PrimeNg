@@ -1,0 +1,11 @@
+npm install primeng --save
+npm install primeicons --save
+
+<p-toast [style]="{marginTop: '110px'}"  position="top-right" [hideTransitionOptions]="'500ms'" ></p-toast>
+
+import {MessageService} from 'primeng/api';
+
+ private messageService: MessageService,
+
+  window.scrollTo(0,0);
+this.messageService.add({severity:'warn', summary: 'Warn Message', detail:'Please Check The Mandatory Fields'});
